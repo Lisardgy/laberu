@@ -41,7 +41,31 @@
     <q-page-container style="padding-top: 0">
       <div class="context">
         <div class="row justify-around">
-          <div class="col-lg-4"></div>
+          <div class="col-lg-4">
+            <q-card-section align="center">
+              <div class="text-h4">Image Labeling</div>
+              <div class="text-subtitle2">by LABERU</div>
+              <div class="q-pa-md">
+    <div class="q-col-gutter-md row items-start">
+      <div class="col-4">
+
+        <q-img
+          src="https://placeimg.com/500/300/nature"
+       
+        />
+      </div>
+
+
+      <div class="col-4">
+        <q-img
+          src="https://placeimg.com/500/300/nature"
+   
+        />
+      </div>
+    </div>
+  </div>
+            </q-card-section>
+          </div>
           <div class="col-lg-4">
             <q-card flat bordered class="my-card">
               <q-card-section>
@@ -57,9 +81,24 @@
                       <q-icon name="lock" />
                     </template>
                   </q-input>
+                  <div align="right" class="q-pa-sm">
+                    <q-btn
+                      flat
+                      size="10px"
+                      class="text-grey-6"
+                      label="Forgot password?"
+                    />
+                  </div>
                 </q-form>
-                <div align="center" style="magin-top:10" >
-                  <q-btn outline rounded style="width:300px" color="primary" label="Sign in" />
+                <div align="center">
+                  <q-btn
+                    class="q-mt-xs"
+                    outline
+                    rounded
+                    style="width: 300px"
+                    color="primary"
+                    label="Sign in"
+                  />
                 </div>
 
                 <div class="text-center q-pa-md q-gutter-md">
@@ -70,10 +109,10 @@
                     <q-icon name="fab fa-google-plus-g" size="1.5rem" />
                   </q-btn>
                 </div>
-              </q-card-section>
-              <q-separator inset />
-              <q-card-section class="text-center q-pa-sm">
-                <p class="text-grey-6">Forgot your password?</p>
+                <q-separator inset />
+                <div class="q-mt-ml q-gutter-sm" align="center">
+                  <q-btn flat color="primary" label="Create an account" />
+                </div>
               </q-card-section>
 
               <!-- <q-card-section>
