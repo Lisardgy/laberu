@@ -11,4 +11,4 @@
 export default {
   name: 'PageIndex'
 }
-</script>
+</script> 

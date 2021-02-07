@@ -52,7 +52,7 @@
                 <q-input outlined v-model="text" label="E-mail" />
                 <q-input outlined v-model="text" label="Password" />
               </div>
-            </div>
+            </div> 
           </q-card-section>
           <q-separator inset />
 
@@ -82,10 +82,13 @@ export default {
 </script>
 
 <style>
+
+
 .toolbarT {
   height: 80px;
   background: #f8f8f8;
 }
+
 
 .titleName {
   color: #666877;
@@ -307,6 +310,8 @@ height: 16.62px;
 background: #D15EFF;
 border-radius: 3px;
 transform: rotate(-90deg);
+ 
+
 
 }
 </style>
