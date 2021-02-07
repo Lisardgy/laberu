@@ -5,7 +5,9 @@
         <q-toolbar class="row full-height justify-center">
           <q-btn flat>
             <q-icon name="laberu" />
-          <q-toolbar-title class="titleName"><strong>LABERU.AI</strong> </q-toolbar-title>
+            <q-toolbar-title class="titleName"
+              ><strong>LABERU.AI</strong>
+            </q-toolbar-title>
           </q-btn>
           <q-space />
           <q-btn
@@ -19,8 +21,8 @@
         </q-toolbar>
       </div>
     </q-header>
-  <q-parallax height="720">
-    <div class="area">
+    <q-parallax height="720">
+      <div class="area">
         <ul class="circles">
           <li></li>
           <li></li>
@@ -34,51 +36,90 @@
           <li></li>
         </ul>
       </div>
-  </q-parallax>
-    
-  
-    <q-page-container style="padding-top:0">
+    </q-parallax>
+
+    <q-page-container style="padding-top: 0">
       <div class="context">
         <div class="row justify-around">
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4">
-        <q-card flat bordered class="my-card">
-          <q-card-section>
-            <div class="text-h4 text-center">สมัครสมาชิก</div>
-          </q-card-section>
-          <q-card-section>
-            <div class="q-pa-md">
-              <div class="q-gutter-md" style="max-width: 400px">
-                <q-input outlined v-model="text" label="E-mail" />
-                <q-input outlined v-model="text" label="Password" />
-              </div>
-            </div>
-          </q-card-section>
-          <q-separator inset />
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4">
+            <q-card flat bordered class="my-card">
+              <q-card-section>
+                <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
+                <q-form class="">
+                  <q-input square clearable type="email" label="Email">
+                    <template v-slot:prepend>
+                      <q-icon name="email" />
+                    </template>
+                  </q-input>
+                  <q-input square clearable type="password" label="Password">
+                    <template v-slot:prepend>
+                      <q-icon name="lock" />
+                    </template>
+                  </q-input>
+                </q-form>
+                <div class="text-center q-pa-md q-gutter-md">
+                  <q-btn round color="indigo-7">
+                    <q-icon name="fab fa-facebook-f" size="1.5rem" />
+                  </q-btn>
+                  <q-btn round color="red-8">
+                    <q-icon name="fab fa-google-plus-g" size="1.5rem" />
+                  </q-btn>
+                  <q-btn round color="light-blue-5">
+                    <q-icon name="fab fa-twitter" size="1.5rem" />
+                  </q-btn>
+                </div>
+                <q-btn
+                  outline
+                  rounded
+                  class="full-width"
+                  color="primary"
+                  label="Sign in"
+                />
+              </q-card-section>
+              <q-separator inset />
+              <q-card-section>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </q-card-section>
 
-          <q-card-section>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </q-card-section>
-        </q-card>
+              <!-- <q-card-section>
+                <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
+              </q-card-section>
+              <q-card-section>
+                <div class="q-pa-md justify-center">
+                  <div class="q-gutter-md" style="max-width: 400px">
+                    <q-input outlined v-model="text" label="E-mail" />
+                    <q-input outlined v-model="text" label="Password" />
+                    <q-btn outline rounded color="primary" label="Sign in" />
+                    <q-btn outline rounded color="primary" label="Register" />
+                  </div>
+                </div>
+              </q-card-section>
+              <q-separator inset />
+
+              <q-card-section>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </q-card-section> -->
+            </q-card>
+          </div>
         </div>
-        </div>
-      </div> 
+      </div>
     </q-page-container>
-    
   </q-layout>
 </template>
 
 <script>
 import EssentialLink from "components/EssentialLink.vue";
- 
+
 export default {
-  data () {
+  data() {
     return {
-      text: ''
-    }
-  }
-}
+      text: "",
+    };
+  },
+};
 </script>
 
 <style>
@@ -95,7 +136,6 @@ export default {
   width: 400px;
   border-radius: 10px;
 }
-
 
 .context {
   width: 100%;
@@ -219,94 +259,84 @@ export default {
   }
 }
 
-.iconic{
+.iconic {
   /* Group 65 */
 
-position: absolute;
-width: 30px;
-height: 30px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
 
-box-shadow: inset 0px 0px 62px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 0px 62px rgba(0, 0, 0, 0.25);
 
+  /* Ellipse 74 */
 
-/* Ellipse 74 */
+  position: absolute;
+  width: 30px;
+  height: 30px;
 
-position: absolute;
-width: 30px;
-height: 30px;
+  background: #6d6b8a;
 
-background: #6D6B8A;
+  /* Group 64 */
 
+  position: absolute;
+  width: 16.62px;
+  height: 19.56px;
 
-/* Group 64 */
+  /* Rectangle 128 */
 
-position: absolute;
-width: 16.62px;
-height: 19.56px;
+  position: absolute;
+  width: 1.8px;
+  height: 15.21px;
 
+  background: #d15eff;
+  border-radius: 3px;
 
+  /* Rectangle 130 */
 
-/* Rectangle 128 */
+  position: absolute;
+  width: 1.8px;
+  height: 10.37px;
 
-position: absolute;
-width: 1.8px;
-height: 15.21px;
+  background: #d15eff;
+  border-radius: 3px;
 
-background: #D15EFF;
-border-radius: 3px;
+  /* Rectangle 132 */
 
+  position: absolute;
+  width: 1.8px;
+  height: 6.57px;
 
-/* Rectangle 130 */
+  background: #d15eff;
+  border-radius: 3px;
 
-position: absolute;
-width: 1.8px;
-height: 10.37px;
+  /* Rectangle 129 */
 
-background: #D15EFF;
-border-radius: 3px;
+  position: absolute;
+  width: 1.8px;
+  height: 5.65px;
 
+  background: #d15eff;
+  border-radius: 3px;
+  transform: rotate(-90deg);
 
-/* Rectangle 132 */
+  /* Rectangle 131 */
 
-position: absolute;
-width: 1.8px;
-height: 6.57px;
+  position: absolute;
+  width: 2.18px;
+  height: 16.62px;
 
-background: #D15EFF;
-border-radius: 3px;
+  background: #d15eff;
+  border-radius: 3px;
+  transform: rotate(-90deg);
 
+  /* Rectangle 133 */
 
-/* Rectangle 129 */
+  position: absolute;
+  width: 1.8px;
+  height: 16.62px;
 
-position: absolute;
-width: 1.8px;
-height: 5.65px;
-
-background: #D15EFF;
-border-radius: 3px;
-transform: rotate(-90deg);
-
-
-/* Rectangle 131 */
-
-position: absolute;
-width: 2.18px;
-height: 16.62px;
-
-background: #D15EFF;
-border-radius: 3px;
-transform: rotate(-90deg);
-
-
-/* Rectangle 133 */
-
-position: absolute;
-width: 1.8px;
-height: 16.62px;
-
-background: #D15EFF;
-border-radius: 3px;
-transform: rotate(-90deg);
-
+  background: #d15eff;
+  border-radius: 3px;
+  transform: rotate(-90deg);
 }
 </style>
