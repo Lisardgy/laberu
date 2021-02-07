@@ -58,8 +58,8 @@
                     </template>
                   </q-input>
                 </q-form>
-                <div align="center" style="magin-top:10" >
-                  <q-btn outline rounded style="width:300px" color="primary" label="Sign in" />
+                <div align="center">
+                  <q-btn outline rounded class="loginBtn" @click="$router.push('/index')" color="primary" label="Sign in" />
                 </div>
 
                 <div class="text-center q-pa-md q-gutter-md">
@@ -75,26 +75,6 @@
               <q-card-section class="text-center q-pa-sm">
                 <p class="text-grey-6">Forgot your password?</p>
               </q-card-section>
-
-              <!-- <q-card-section>
-                <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
-              </q-card-section>
-              <q-card-section>
-                <div class="q-pa-md justify-center">
-                  <div class="q-gutter-md" style="max-width: 400px">
-                    <q-input outlined v-model="text" label="E-mail" />
-                    <q-input outlined v-model="text" label="Password" />
-                    <q-btn outline rounded color="primary" label="Sign in" />
-                    <q-btn outline rounded color="primary" label="Register" />
-                  </div>
-                </div>
-              </q-card-section>
-              <q-separator inset />
-
-              <q-card-section>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </q-card-section> -->
             </q-card>
           </div>
         </div>
@@ -123,6 +103,11 @@ export default {
 
 .titleName {
   color: #666877;
+}
+
+.loginBtn{
+  width:300px;
+  margin-top:2rem;
 }
 
 .my-card {
