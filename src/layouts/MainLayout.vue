@@ -44,15 +44,18 @@
       <div class="col-lg-4">
         <q-card flat bordered class="my-card">
           <q-card-section>
-            <div class="text-h4 text-center">สมัครสมาชิก</div>
+            <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
           </q-card-section>
           <q-card-section>
-            <div class="q-pa-md">
+            <div class="q-pa-md center">
               <div class="q-gutter-md" style="max-width: 400px">
                 <q-input outlined v-model="text" label="E-mail" />
                 <q-input outlined v-model="text" label="Password" />
               </div>
             </div>
+            <div class="q-gutter-md" style="max-width: 400px">
+               <q-btn outline rounded color="primary" label="Sign in" />
+              </div>
           </q-card-section>
           <q-separator inset />
 
