@@ -58,6 +58,10 @@
                     </template>
                   </q-input>
                 </q-form>
+                <div align="center" style="magin-top:10" >
+                  <q-btn outline rounded style="width:300px" color="primary" label="Sign in" />
+                </div>
+
                 <div class="text-center q-pa-md q-gutter-md">
                   <q-btn round color="indigo-7">
                     <q-icon name="fab fa-facebook-f" size="1.5rem" />
@@ -65,22 +69,11 @@
                   <q-btn round color="red-8">
                     <q-icon name="fab fa-google-plus-g" size="1.5rem" />
                   </q-btn>
-                  <q-btn round color="light-blue-5">
-                    <q-icon name="fab fa-twitter" size="1.5rem" />
-                  </q-btn>
                 </div>
-                <q-btn
-                  outline
-                  rounded
-                  class="full-width"
-                  color="primary"
-                  label="Sign in"
-                />
               </q-card-section>
               <q-separator inset />
-              <q-card-section>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <q-card-section class="text-center q-pa-sm">
+                <p class="text-grey-6">Forgot your password?</p>
               </q-card-section>
 
               <!-- <q-card-section>
