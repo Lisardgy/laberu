@@ -4,7 +4,9 @@
       <div class="text-white toolbarT">
         <q-toolbar class="row full-height justify-center">
           <q-btn flat>
+
             <q-icon name="img:../icons/logo.png" size="2rem" />
+
             <q-toolbar-title class="titleName"
               ><strong>LABERU.AI</strong>
             </q-toolbar-title>
@@ -38,32 +40,33 @@
       </div>
     </q-parallax>
 
-    <q-page-container style="padding-top:   0">
+
+    <q-page-container style="padding-top: 0">
       <div class="context">
         <div class="row justify-around">
           <div class="col-lg-4">
-            <div class="q-pa-md">
-    <q-carousel
-      animated
-      v-model="slide"
-      navigation
-      infinite
-      :autoplay="autoplay"
-      arrows
-      transition-prev="slide-right"
-      transition-next="slide-left"
-      @mouseenter="autoplay = false"
-      @mouseleave="autoplay = true"
-    >
-      <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
-      <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
-      <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
-      <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
-    </q-carousel>
-  </div>
+            
+            <q-card-section align="center">
+              <div class="text-h4">Image Labeling</div>
+              <div class="text-subtitle2">by LABERU</div>
+              <div class="q-pa-md">
+                <div class="q-col-gutter-md row items-start">
+                  <div class="col-5" >
+                    <q-img src="../images/hight.jpg"  width="100%" height="355px" />
+                  </div>
+                  <div class="col-7">
+                    <q-img src="../images/right1.jpg" width="95%" height="170px"/>
+                    <q-img class="q-mt-md" src="../images/right2.jpg"  width="95%" height="170px"/>
+                  </div>
+                  
+                </div>
+                <div class="q-col-gutter-md row items-start q-mt-xs"></div>
+              </div>
+            </q-card-section>
           </div>
-          <div class="col-lg-4">
-            <q-card flat bordered class="my-card">
+          <div class="col-lg-5 q-mt-md">
+            <q-card flat bordered class="jjCard">
+
               <q-card-section>
                 <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
                 <q-form class="">
@@ -77,10 +80,28 @@
                       <q-icon name="lock" />
                     </template>
                   </q-input>
+
+                  <div align="right" class="q-pa-sm">
+                    <q-btn
+                      flat
+                      size="10px"
+                      class="text-grey-6"
+                      label="Forgot password?"
+                    />
+                  </div>
                 </q-form>
                 <div align="center">
-                  <q-btn outline rounded class="loginBtn" @click="$router.push('/index')" color="primary" label="Sign in" />
-                </div>
+                  <q-btn
+                    class="q-mt-xs"
+                    outline
+                    rounded
+                    @click="$router.push('/index')"
+                    style="width: 300px"
+                    color="primary"
+                    label="Sign in"
+                  />
+
+                
 
                 <div class="text-center q-pa-md q-gutter-md">
                   <q-btn round color="indigo-7">
@@ -90,11 +111,33 @@
                     <q-icon name="fab fa-google-plus-g" size="1.5rem" />
                   </q-btn>
                 </div>
+
+                <q-separator inset />
+                <div class="q-mt-ml q-gutter-sm" align="center">
+                  <q-btn flat color="primary" label="Create an account" />
+                </div>
+              </q-card-section>
+
+              <!-- <q-card-section>
+                <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
+              </q-card-section>
+              <q-card-section>
+                <div class="q-pa-md justify-center">
+                  <div class="q-gutter-md" style="max-width: 400px">
+                    <q-input outlined v-model="text" label="E-mail" />
+                    <q-input outlined v-model="text" label="Password" />
+                    <q-btn outline rounded color="primary" label="Sign in" />
+                    <q-btn outline rounded color="primary" label="Register" />
+                  </div>
+                </div>
               </q-card-section>
               <q-separator inset />
-              <q-card-section class="text-center q-pa-sm">
-                <p class="text-grey-6">Forgot your password?</p>
-              </q-card-section>
+
+              <q-card-section>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </q-card-section> -->
+
             </q-card>
           </div>
         </div>
@@ -110,14 +153,21 @@ export default {
   data() {
     return {
       text: "",
+
       slide: 1,
       autoplay: true
+
     };
   },
 };
 </script>
 
 <style>
+
+.jjCard{
+  height: 95%;
+  width: 70%;
+}
 .toolbarT {
   height: 80px;
   background: #f8f8f8;
