@@ -4,7 +4,6 @@
       <div class="text-white toolbarT">
         <q-toolbar class="row full-height justify-center">
           <q-btn flat>
-
             <q-icon name="img:../icons/logo.png" size="2rem" />
 
             <q-toolbar-title class="titleName"
@@ -40,25 +39,48 @@
       </div>
     </q-parallax>
 
-
     <q-page-container style="padding-top: 0">
       <div class="context">
         <div class="row justify-around">
           <div class="col-lg-4">
-            
             <q-card-section align="center">
               <div class="text-h4">Image Labeling</div>
               <div class="text-subtitle2">by LABERU</div>
               <div class="q-pa-md">
-                <div class="q-col-gutter-md row items-start">
-                  <div class="col-5" >
-                    <q-img src="../images/hight.jpg"  width="100%" height="355px" />
+                <div class="q-col-gutter-md q-mt-sm row items-start">
+                  <div class="col-3">
+                    <q-img class="imgFade_1"
+                      transition="bounceInLeft"
+                      src="../images/hight.jpg"
+                      width="100%"
+                      height="355px"
+                    />
                   </div>
-                  <div class="col-7">
-                    <q-img src="../images/right1.jpg" width="95%" height="170px"/>
-                    <q-img class="q-mt-md" src="../images/right2.jpg"  width="95%" height="170px"/>
+                  <div class="col-3">
+                    <q-img class="imgFade_2"
+                      transition="fade"
+                      src="../images/right1.jpg"
+                      width="100%"
+                      height="355px"
+                    />
                   </div>
-                  
+                  <div class="col-3">
+                    <q-img class="imgFade_3"
+                      transition="fade"
+                      src="../images/right2.jpg"
+                      width="100%"
+                      height="355px"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <q-img class="imgFade_4"
+                      transition="fade"
+                      src="../images/right3.jpg"
+                      width="100%"
+                      height="355px"
+                    />
+                  </div>
+                 
                 </div>
                 <div class="q-col-gutter-md row items-start q-mt-xs"></div>
               </div>
@@ -66,7 +88,6 @@
           </div>
           <div class="col-lg-5 q-mt-md">
             <q-card flat bordered class="jjCard">
-
               <q-card-section>
                 <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
                 <q-form class="">
@@ -100,8 +121,7 @@
                     color="primary"
                     label="Sign in"
                   />
-
-                
+                </div>
 
                 <div class="text-center q-pa-md q-gutter-md">
                   <q-btn round color="indigo-7">
@@ -117,27 +137,7 @@
                   <q-btn flat color="primary" label="Create an account" />
                 </div>
               </q-card-section>
-
-              <!-- <q-card-section>
-                <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
-              </q-card-section>
-              <q-card-section>
-                <div class="q-pa-md justify-center">
-                  <div class="q-gutter-md" style="max-width: 400px">
-                    <q-input outlined v-model="text" label="E-mail" />
-                    <q-input outlined v-model="text" label="Password" />
-                    <q-btn outline rounded color="primary" label="Sign in" />
-                    <q-btn outline rounded color="primary" label="Register" />
-                  </div>
-                </div>
-              </q-card-section>
-              <q-separator inset />
-
-              <q-card-section>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </q-card-section> -->
-
+              <q-card-section> </q-card-section>
             </q-card>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default {
       text: "",
 
       slide: 1,
-      autoplay: true
+      autoplay: true,
 
     };
   },
@@ -163,8 +163,7 @@ export default {
 </script>
 
 <style>
-
-.jjCard{
+.jjCard {
   height: 95%;
   width: 70%;
 }
@@ -177,13 +176,29 @@ export default {
   color: #666877;
 }
 
-.animate__animated.animate__fadeInDown {
-  --animate-duration: 2s;
+.imgFade_1{
+  animation-delay: 1s;
+  animation-duration: 2s;
 }
 
-.loginBtn{
-  width:300px;
-  margin-top:2rem;
+.imgFade_2{
+  animation-delay: 1.5s;
+  animation-duration: 2s;
+}
+
+.imgFade_3{
+  animation-delay: 2s;
+  animation-duration: 2s;
+}
+
+.imgFade_4{
+  animation-delay: 2.5s;
+  animation-duration: 2s;
+}
+
+.loginBtn {
+  width: 300px;
+  margin-top: 2rem;
 }
 
 .my-card {
