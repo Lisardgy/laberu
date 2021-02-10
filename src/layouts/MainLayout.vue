@@ -4,7 +4,7 @@
       <div class="text-white toolbarT">
         <q-toolbar class="row full-height justify-center">
           <q-btn flat>
-            <q-icon src="../images/logo.png" />
+            <q-icon name="img:../icons/logo.png" size="2rem" />
             <q-toolbar-title class="titleName"
               ><strong>LABERU.AI</strong>
             </q-toolbar-title>
@@ -38,10 +38,30 @@
       </div>
     </q-parallax>
 
-    <q-page-container style="padding-top: 0">
+    <q-page-container style="padding-top:   0">
       <div class="context">
         <div class="row justify-around">
-          <div class="col-lg-4"></div>
+          <div class="col-lg-4">
+            <div class="q-pa-md">
+    <q-carousel
+      animated
+      v-model="slide"
+      navigation
+      infinite
+      :autoplay="autoplay"
+      arrows
+      transition-prev="slide-right"
+      transition-next="slide-left"
+      @mouseenter="autoplay = false"
+      @mouseleave="autoplay = true"
+    >
+      <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
+      <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
+      <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
+      <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
+    </q-carousel>
+  </div>
+          </div>
           <div class="col-lg-4">
             <q-card flat bordered class="my-card">
               <q-card-section>
@@ -90,6 +110,8 @@ export default {
   data() {
     return {
       text: "",
+      slide: 1,
+      autoplay: true
     };
   },
 };
