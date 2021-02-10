@@ -41,7 +41,7 @@
     <q-page-container style="padding-top: 0">
       <div class="context">
         <div class="row justify-around">
-          <div class="col-md-6">
+          <div class="col-6">
             <q-card class="cardIMG" style="left: 20%">
               <q-card-section>
                 <div class="row">
@@ -71,7 +71,7 @@
                     height="auto"
                   />
                 </div>
-                <div class="imgID">
+                <div class="imgID text-right" style="text-right">
                   Image ID : 00715AB
                 </div>
               </q-card-section>
@@ -137,13 +137,14 @@ import EssentialLink from "components/EssentialLink.vue";
 export default {
   data() {
     return {
-      text: ""
+      text: "",
     };
-  }
+  },
 };
 </script>
 
 <style>
+
 .imgNumber {
   padding: 5px 0 0 15px;
   font-weight: bold;
@@ -169,6 +170,7 @@ export default {
 .iconIMG {
   font-size: 50px;
   padding: 0 0 0 50px;
+
 }
 .cardIMG {
   width: 700px;
@@ -187,6 +189,11 @@ export default {
 .imgMain {
   width: 100%;
   border-radius: 5px;
+}
+
+.imgID {
+  margin: -10px 0 0 0;
+  font-size: 10px;
 }
 
 
@@ -437,4 +444,6 @@ export default {
   border-radius: 3px;
   transform: rotate(-90deg);
 }
+
 </style>
+
