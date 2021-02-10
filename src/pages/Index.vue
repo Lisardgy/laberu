@@ -46,12 +46,17 @@
               <q-card-section>
                 <div class="row">
                   <div class="col">
-                    <div class="text-subtitle2 text-left" style="text-right">
-                      Image#100
+                    <div class="imgNumber text-left" style="text-right">
+                      Image#99
                     </div>
                   </div>
                   <div class="col text-right">
-                    <q-btn color="primary" label="SKIP" class="btnSkip" />
+                    <q-btn
+                      color="primary"
+                      label="SKIP"
+                      class="btnSkip"
+                      style="margin: 0 15px 0 0"
+                    />
                   </div>
                 </div>
               </q-card-section>
@@ -72,7 +77,7 @@
               </q-card-section>
             </q-card>
           </div>
-          <div class="col-6">
+          <div class="col-md-6">
             <q-card class="cardText" style="left: 15%">
               <q-card-section>
                 <div class="text-h6 text-center">
@@ -89,7 +94,7 @@
                     class="textDescribe"
                     v-model="text"
                     filled
-                    type="textarea"
+                    type="textarea" placeholder="โปรดใส่คำอธิบายรูปภาพ"
                   />
                 </div>
 
@@ -100,18 +105,21 @@
             </q-card>
             <q-card class="cardProfile" style="left: 15%">
               <q-card-section>
-                <div class="text-h6 text-center">
-                  <b>Profile</b>
-                </div>
+                <div class="text-h6 text-center"><b>Profile</b></div>
               </q-card-section>
               <q-card-actions vertical>
-                <div
-                  class="q-pa-md"
-                  style="max-width: 90% align-item-center"
-                  row="100"
-                >
-                  <div class="iconIMG">
-                    <q-icon name="images"  />
+                <div class="row" style="padding-bottom:20px">
+                  <div class="col-4">
+                    <div class="row">
+                      <q-icon name="fas fa-images" class="ProfileIMG" />
+                      <div class="detail">x 155</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="row">
+                      <q-icon name="fas fa-wallet" class="ProfileIMG" />
+                      <div class="detail">3000 Baht</div>
+                    </div>
                   </div>
                 </div>
               </q-card-actions>
@@ -136,8 +144,33 @@ export default {
 </script>
 
 <style>
+
+.imgNumber {
+  padding: 5px 0 0 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.imgID {
+  padding: 0 15px 0 0;
+  text-align: right;
+  font-size: 10px;
+}
+
+.detail {
+  padding: 5px 0 0 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.ProfileIMG {
+  color: black;
+  padding: 0 0 0 50px;
+
+  font-size: 40px;
+}
 .iconIMG {
-font-size: 50px;  padding: 0 0 0 50px;
+  font-size: 50px;
+  padding: 0 0 0 50px;
+
 }
 .cardIMG {
   width: 700px;
@@ -157,10 +190,12 @@ font-size: 50px;  padding: 0 0 0 50px;
   width: 100%;
   border-radius: 5px;
 }
+
 .imgID {
   margin: -10px 0 0 0;
   font-size: 10px;
 }
+
 
 .q-pa-md {
   padding: 16px 16px;
@@ -409,4 +444,6 @@ font-size: 50px;  padding: 0 0 0 50px;
   border-radius: 3px;
   transform: rotate(-90deg);
 }
+
 </style>
+

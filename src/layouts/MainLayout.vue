@@ -5,7 +5,6 @@
         <q-toolbar class="row full-height justify-center">
           <q-btn flat>
             <q-icon name="img:../icons/logo.png" size="2rem" />
-
             <q-toolbar-title class="titleName"
               ><strong>LABERU.AI</strong>
             </q-toolbar-title>
@@ -101,7 +100,6 @@
                       <q-icon name="lock" />
                     </template>
                   </q-input>
-
                   <div align="right" class="q-pa-sm">
                     <q-btn
                       flat
@@ -131,7 +129,6 @@
                     <q-icon name="fab fa-google-plus-g" size="1.5rem" />
                   </q-btn>
                 </div>
-
                 <q-separator inset />
                 <div class="q-mt-ml q-gutter-sm" align="center">
                   <q-btn flat color="primary" label="Create an account" />
@@ -153,10 +150,8 @@ export default {
   data() {
     return {
       text: "",
-
       slide: 1,
       autoplay: true,
-
     };
   },
 };
@@ -199,6 +194,7 @@ export default {
 .loginBtn {
   width: 300px;
   margin-top: 2rem;
+
 }
 
 .my-card {
