@@ -4,7 +4,9 @@
       <div class="text-white toolbarT">
         <q-toolbar class="row full-height justify-center">
           <q-btn flat>
-            <q-icon name="laberu" />
+
+            <q-icon name="img:../icons/logo.png" size="2rem" />
+
             <q-toolbar-title class="titleName"
               ><strong>LABERU.AI</strong>
             </q-toolbar-title>
@@ -38,6 +40,7 @@
       </div>
     </q-parallax>
 
+
     <q-page-container style="padding-top: 0">
       <div class="context">
         <div class="row justify-around">
@@ -63,6 +66,7 @@
           </div>
           <div class="col-lg-5 q-mt-md">
             <q-card flat bordered class="jjCard">
+
               <q-card-section>
                 <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
                 <q-form class="">
@@ -76,6 +80,7 @@
                       <q-icon name="lock" />
                     </template>
                   </q-input>
+
                   <div align="right" class="q-pa-sm">
                     <q-btn
                       flat
@@ -90,11 +95,13 @@
                     class="q-mt-xs"
                     outline
                     rounded
+                    @click="$router.push('/index')"
                     style="width: 300px"
                     color="primary"
                     label="Sign in"
                   />
-                </div>
+
+                
 
                 <div class="text-center q-pa-md q-gutter-md">
                   <q-btn round color="indigo-7">
@@ -104,6 +111,7 @@
                     <q-icon name="fab fa-google-plus-g" size="1.5rem" />
                   </q-btn>
                 </div>
+
                 <q-separator inset />
                 <div class="q-mt-ml q-gutter-sm" align="center">
                   <q-btn flat color="primary" label="Create an account" />
@@ -129,6 +137,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </q-card-section> -->
+
             </q-card>
           </div>
         </div>
@@ -144,6 +153,10 @@ export default {
   data() {
     return {
       text: "",
+
+      slide: 1,
+      autoplay: true
+
     };
   },
 };
@@ -162,6 +175,11 @@ export default {
 
 .titleName {
   color: #666877;
+}
+
+.loginBtn{
+  width:300px;
+  margin-top:2rem;
 }
 
 .my-card {
