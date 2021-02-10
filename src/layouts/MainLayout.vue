@@ -4,6 +4,7 @@
       <div class="text-white toolbarT">
         <q-toolbar class="row full-height justify-center">
           <q-btn flat>
+            <q-icon name="img:../icons/logo.png" size="2rem" />
             <q-toolbar-title class="titleName"
               ><strong>LABERU.AI</strong>
             </q-toolbar-title>
@@ -40,9 +41,52 @@
     <q-page-container style="padding-top: 0">
       <div class="context">
         <div class="row justify-around">
-          <div class="col-lg-4"></div>
           <div class="col-lg-4">
-            <q-card flat bordered class="my-card">
+            <q-card-section align="center">
+              <div class="text-h4">Image Labeling</div>
+              <div class="text-subtitle2">by LABERU</div>
+              <div class="q-pa-md">
+                <div class="q-col-gutter-md q-mt-sm row items-start">
+                  <div class="col-3">
+                    <q-img class="imgFade_1"
+                      transition="bounceInLeft"
+                      src="../images/hight.jpg"
+                      width="100%"
+                      height="355px"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <q-img class="imgFade_2"
+                      transition="fade"
+                      src="../images/right1.jpg"
+                      width="100%"
+                      height="355px"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <q-img class="imgFade_3"
+                      transition="fade"
+                      src="../images/right2.jpg"
+                      width="100%"
+                      height="355px"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <q-img class="imgFade_4"
+                      transition="fade"
+                      src="../images/right3.jpg"
+                      width="100%"
+                      height="355px"
+                    />
+                  </div>
+                 
+                </div>
+                <div class="q-col-gutter-md row items-start q-mt-xs"></div>
+              </div>
+            </q-card-section>
+          </div>
+          <div class="col-lg-5 q-mt-md">
+            <q-card flat bordered class="jjCard">
               <q-card-section>
                 <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
                 <q-form class="">
@@ -56,9 +100,25 @@
                       <q-icon name="lock" />
                     </template>
                   </q-input>
+                  <div align="right" class="q-pa-sm">
+                    <q-btn
+                      flat
+                      size="10px"
+                      class="text-grey-6"
+                      label="Forgot password?"
+                    />
+                  </div>
                 </q-form>
                 <div align="center">
-                  <q-btn outline rounded class="loginBtn" @click="$router.push('/index')" color="primary" label="Sign in" />
+                  <q-btn
+                    class="q-mt-xs"
+                    outline
+                    rounded
+                    @click="$router.push('/index')"
+                    style="width: 300px"
+                    color="primary"
+                    label="Sign in"
+                  />
                 </div>
 
                 <div class="text-center q-pa-md q-gutter-md">
@@ -69,11 +129,12 @@
                     <q-icon name="fab fa-google-plus-g" size="1.5rem" />
                   </q-btn>
                 </div>
+                <q-separator inset />
+                <div class="q-mt-ml q-gutter-sm" align="center">
+                  <q-btn flat color="primary" label="Create an account" />
+                </div>
               </q-card-section>
-              <q-separator inset />
-              <q-card-section class="text-center q-pa-sm">
-                <p class="text-grey-6">Forgot your password?</p>
-              </q-card-section>
+              <q-card-section> </q-card-section>
             </q-card>
           </div>
         </div>
@@ -89,12 +150,18 @@ export default {
   data() {
     return {
       text: "",
+      slide: 1,
+      autoplay: true,
     };
   },
 };
 </script>
 
 <style>
+.jjCard {
+  height: 95%;
+  width: 70%;
+}
 .toolbarT {
   height: 80px;
   background: #f8f8f8;
@@ -104,9 +171,30 @@ export default {
   color: #666877;
 }
 
-.loginBtn{
-  width:300px;
-  margin-top:2rem;
+.imgFade_1{
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+
+.imgFade_2{
+  animation-delay: 1.5s;
+  animation-duration: 2s;
+}
+
+.imgFade_3{
+  animation-delay: 2s;
+  animation-duration: 2s;
+}
+
+.imgFade_4{
+  animation-delay: 2.5s;
+  animation-duration: 2s;
+}
+
+.loginBtn {
+  width: 300px;
+  margin-top: 2rem;
+
 }
 
 .my-card {

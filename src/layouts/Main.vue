@@ -39,90 +39,45 @@
     </q-parallax>
 
     <q-page-container style="padding-top: 0">
-      <div class="context">
+      <div class="context center">
         <div class="row justify-around">
-          <div class="col-6">
-            <q-card class="cardIMG" style="left: 20%">
+          <div class="col-lg-3">
+            <q-card flat bordered class="my-card">
               <q-card-section>
-                <div class="row">
-                  <div class="col">
-                    <div class="imgNumber text-left" style="text-right">
-                      Image#99
-                    </div>
-                  </div>
-                  <div class="col text-right">
-                    <q-btn
-                      color="primary"
-                      label="SKIP"
-                      class="btnSkip"
-                      style="margin: 0 15px 0 0"
-                    />
-                  </div>
-                </div>
+                <div class="text-h6 text-center"><b>Image#01</b></div>
               </q-card-section>
-
               <q-card-section>
                 <div class="q-pa-md">
-                  <img
-                    src="../images/test.jpg"
-                    alt=""
-                    class="imgMain"
-                    width="100%"
-                    height="auto"
-                  />
+                <img src="../images/test.jpg" alt="" height="300px">
                 </div>
-                <div class="imgID text-right" style="text-right">
-                  Image ID : 00715AB
-                </div>
+              </q-card-section>
+              <q-separator inset />
+
+              <q-card-section>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </q-card-section>
             </q-card>
           </div>
-          <div class="col-md-6">
-            <q-card class="cardText" style="left: 15%">
+          <div class="col-lg-4 center">
+            <q-card flat bordered class="my-card">
               <q-card-section>
-                <div class="text-h6 text-center">
-                  <b>Describe the Image</b>
+                <div class="text-h4 text-center"><b>Describe the Image</b></div>
+              </q-card-section>
+              <q-card-section>
+                <div class="q-pa-md">
+                  <div class="q-gutter-md" style="max-width: 400px">
+                    <q-input outlined v-model="text" label="E-mail" />
+                    <q-input outlined v-model="text" label="Password" />
+                  </div>
                 </div>
               </q-card-section>
-              <q-card-actions vertical>
-                <div
-                  class="q-pa-md"
-                  style="max-width: 90% align-item-center"
-                  row="100"
-                >
-                  <q-input
-                    class="textDescribe"
-                    v-model="text"
-                    filled
-                    type="textarea" placeholder="โปรดใส่คำอธิบายรูปภาพ"
-                  />
-                </div>
+              <q-separator inset />
 
-                <div class="btnSave">
-                  <q-btn class="btnColor" label="SAVE" />
-                </div>
-              </q-card-actions>
-            </q-card>
-            <q-card class="cardProfile" style="left: 15%">
               <q-card-section>
-                <div class="text-h6 text-center"><b>Profile</b></div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </q-card-section>
-              <q-card-actions vertical>
-                <div class="row" style="padding-bottom:20px">
-                  <div class="col-4">
-                    <div class="row">
-                      <q-icon name="fas fa-images" class="ProfileIMG" />
-                      <div class="detail">x 155</div>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="row">
-                      <q-icon name="fas fa-wallet" class="ProfileIMG" />
-                      <div class="detail">3000 Baht</div>
-                    </div>
-                  </div>
-                </div>
-              </q-card-actions>
             </q-card>
           </div>
         </div>
@@ -144,90 +99,6 @@ export default {
 </script>
 
 <style>
-
-.imgNumber {
-  padding: 5px 0 0 15px;
-  font-weight: bold;
-  font-size: 18px;
-}
-.imgID {
-  padding: 0 15px 0 0;
-  text-align: right;
-  font-size: 10px;
-}
-
-.detail {
-  padding: 5px 0 0 20px;
-  font-weight: bold;
-  font-size: 18px;
-}
-.ProfileIMG {
-  color: black;
-  padding: 0 0 0 50px;
-
-  font-size: 40px;
-}
-.iconIMG {
-  font-size: 50px;
-  padding: 0 0 0 50px;
-
-}
-.cardIMG {
-  width: 700px;
-  border-radius: 10px;
-}
-.cardText {
-  width: 500px;
-  border-radius: 10px;
-}
-.cardProfile {
-  margin: 30px 0 0 0;
-  width: 500px;
-  border-radius: 10px;
-}
-
-.imgMain {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.imgID {
-  margin: -10px 0 0 0;
-  font-size: 10px;
-}
-
-
-.q-pa-md {
-  padding: 16px 16px;
-  margin: -20px 0 0 0;
-}
-
-.btnSkip {
-  border-radius: 5px;
-  font-size: 12px;
-  width: 20%;
-  height: 90%;
-}
-.btnColor {
-  width: 90%;
-  background-color: #6bce2e;
-  color: white;
-}
-
-.textDescribe {
-  resize: none !important;
-}
-.q-textarea .q-field__native {
-  resize: none;
-  padding-top: 17px;
-  min-height: 52px;
-}
-
-.btnSave {
-  padding: 10px 10px 10px 10px;
-  text-align: center;
-}
-
 .toolbarT {
   height: 80px;
   background: #f8f8f8;
@@ -444,6 +315,4 @@ export default {
   border-radius: 3px;
   transform: rotate(-90deg);
 }
-
 </style>
-
