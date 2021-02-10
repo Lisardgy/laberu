@@ -62,20 +62,38 @@
   
     <q-page-container style="padding-top:0">
       <div class="context">
-        <div class="row justify-around">
+        <div class="row justify-around flex">
           <q-card flat bordered class="my-card">
             <q-card-section>
               <div class="text-h5 text-center">HISTORY</div>
             </q-card-section>
               <q-card-section>
-                <div class="q-pa-md">
-                  <q-list>
-                    <q-item clickable v-ripple>
-                      <q-item-section thumbnail>
+                <div class="q-pa-md drop">
+                   <q-list> 
+
+
+                     <q-item clickable v-ripple >
+                      <q-item-section thumbnail  direction="right">
                         <img src="https://cdn.quasar.dev/img/mountains.jpg">
                       </q-item-section>
                       <q-item-section>List item</q-item-section>
-                    </q-item> 
+                          
+                          <q-fab color="secondary" push icon="keyboard_arrow_right" direction="right">
+                            <q-fab-action @click="onClick">
+                              <q-card class="my-carddetail"  >
+                                <img src="https://cdn.quasar.dev/img/mountains.jpg" style="width:100%" >
+                              <q-card-section>
+                                <div class="text-h6">Our Changing Planet</div>
+                                  <div class="text-subtitle2">by John Doe</div>
+                              </q-card-section>
+                              <q-card-section class="q-pt-none">
+                                {{ lorem }}
+                              </q-card-section>
+                              </q-card>
+                            </q-fab-action>
+                          </q-fab>
+                      </q-item>
+                    
 
                     <q-item clickable v-ripple>
                       <q-item-section thumbnail>
@@ -109,7 +127,7 @@
             </q-card-section>
          </q-card>
  
-          <q-card class="my-card">
+          <!-- <q-card class="my-card">
             <img src="https://cdn.quasar.dev/img/mountains.jpg">
             <q-card-section>
               <div class="text-h6">Our Changing Planet</div>
@@ -118,7 +136,8 @@
             <q-card-section class="q-pt-none">
               {{ lorem }}
             </q-card-section>
-          </q-card> 
+          </q-card>  -->
+
         </div>
       </div> 
     </q-page-container>
@@ -136,6 +155,10 @@ export default {
       text: '',
       lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     }
+  },methods:{
+     onClick () {
+      // console.log('Clicked on a fab action')
+    }
   }
 }
 </script>
@@ -143,7 +166,8 @@ export default {
 <style>
 
 /* ยังไม่ได้ใส่ style ของรูป */
-
+ 
+ 
 .toolbarT {
   height: 80px;
   background: #f8f8f8;
@@ -160,6 +184,11 @@ export default {
 .my-card {
   width: 400px;
   border-radius: 10px;
+}
+
+.my-carddetail {
+  width: 300px;
+  border-radius: 10px; 
 }
 
 
