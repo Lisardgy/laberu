@@ -112,7 +112,7 @@
                   <div class="col-4">
                     <div class="row">
                       <q-icon name="fas fa-images" class="ProfileIMG" />
-                      <div class="detail">X 155</div>
+                      <div class="detail">x 155</div>
                     </div>
                   </div>
                   <div class="col-6">
