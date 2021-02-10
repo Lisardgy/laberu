@@ -127,6 +127,10 @@ export default {
   color: #666877;
 }
 
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 2s;
+}
+
 .loginBtn{
   width:300px;
   margin-top:2rem;
