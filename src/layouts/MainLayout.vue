@@ -46,24 +46,47 @@
               <div class="text-h4">Image Labeling</div>
               <div class="text-subtitle2">by LABERU</div>
               <div class="q-pa-md">
-    <div class="q-col-gutter-md row items-start">
-      <div class="col-4">
-
-        <q-img
-          src="https://placeimg.com/500/300/nature"
-       
-        />
-      </div>
-
-
-      <div class="col-4">
-        <q-img
-          src="https://placeimg.com/500/300/nature"
-   
-        />
-      </div>
-    </div>
-  </div>
+                <div class="q-col-gutter-md row items-start">
+                  <div class="col-4">
+                    <q-img
+                      src="https://placeimg.com/500/300/nature"
+                      :ratio="4 / 3"
+                    />
+                  </div>
+                  <div class="col-4">
+                    <q-img
+                      src="https://placeimg.com/500/300/nature"
+                      :ratio="1"
+                    />
+                  </div>
+                  <div class="col-4">
+                    <q-img
+                      src="https://placeimg.com/500/300/nature"
+                      :ratio="4 / 3"
+                    />
+                  </div>
+                </div>
+                <div class="q-col-gutter-md row items-start q-mt-md">
+                  <div class="col-4">
+                    <q-img
+                      src="https://placeimg.com/500/300/nature"
+                      :ratio="1"
+                    />
+                  </div>
+                  <div class="col-4">
+                    <q-img
+                      src="https://placeimg.com/500/300/nature"
+                      :ratio="4 / 3"
+                    />
+                  </div>
+                  <div class="col-4">
+                    <q-img
+                      src="https://placeimg.com/500/300/nature"
+                      :ratio="1"
+                    />
+                  </div>
+                </div>
+              </div>
             </q-card-section>
           </div>
           <div class="col-lg-4">
