@@ -42,6 +42,7 @@
       <div class="context">
         <div class="row justify-around">
           <div class="col-lg-4">
+            
             <q-card-section align="center">
               <div class="text-h4">Image Labeling</div>
               <div class="text-subtitle2">by LABERU</div>
@@ -60,8 +61,8 @@
               </div>
             </q-card-section>
           </div>
-          <div class="col-lg-4 q-mt-xl">
-            <q-card flat bordered class="my-card">
+          <div class="col-lg-5 q-mt-md">
+            <q-card flat bordered class="jjCard">
               <q-card-section>
                 <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
                 <q-form class="">
@@ -149,6 +150,11 @@ export default {
 </script>
 
 <style>
+
+.jjCard{
+  height: 95%;
+  width: 70%;
+}
 .toolbarT {
   height: 80px;
   background: #f8f8f8;
