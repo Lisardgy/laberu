@@ -47,49 +47,20 @@
               <div class="text-subtitle2">by LABERU</div>
               <div class="q-pa-md">
                 <div class="q-col-gutter-md row items-start">
-                  <div class="col-4">
-                    <q-img
-                      src="https://placeimg.com/500/300/nature"
-                      :ratio="4 / 3"
-                    />
+                  <div class="col-5" >
+                    <q-img src="../images/hight.jpg"  width="100%" height="355px" />
                   </div>
-                  <div class="col-4">
-                    <q-img
-                      src="https://placeimg.com/500/300/nature"
-                      :ratio="1"
-                    />
+                  <div class="col-7">
+                    <q-img src="../images/right1.jpg" width="95%" height="170px"/>
+                    <q-img class="q-mt-md" src="../images/right2.jpg"  width="95%" height="170px"/>
                   </div>
-                  <div class="col-4">
-                    <q-img
-                      src="https://placeimg.com/500/300/nature"
-                      :ratio="4 / 3"
-                    />
-                  </div>
+                  
                 </div>
-                <div class="q-col-gutter-md row items-start q-mt-md">
-                  <div class="col-4">
-                    <q-img
-                      src="https://placeimg.com/500/300/nature"
-                      :ratio="1"
-                    />
-                  </div>
-                  <div class="col-4">
-                    <q-img
-                      src="https://placeimg.com/500/300/nature"
-                      :ratio="4 / 3"
-                    />
-                  </div>
-                  <div class="col-4">
-                    <q-img
-                      src="https://placeimg.com/500/300/nature"
-                      :ratio="1"
-                    />
-                  </div>
-                </div>
+                <div class="q-col-gutter-md row items-start q-mt-xs"></div>
               </div>
             </q-card-section>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 q-mt-xl">
             <q-card flat bordered class="my-card">
               <q-card-section>
                 <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
