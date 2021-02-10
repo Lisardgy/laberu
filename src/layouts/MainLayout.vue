@@ -4,7 +4,7 @@
       <div class="text-white toolbarT">
         <q-toolbar class="row full-height justify-center">
           <q-btn flat>
-            <q-icon name="laberu" />
+            <q-icon src="../images/logo.png" />
             <q-toolbar-title class="titleName"
               ><strong>LABERU.AI</strong>
             </q-toolbar-title>
