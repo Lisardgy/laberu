@@ -10,14 +10,35 @@
             </q-toolbar-title>
           </q-btn>
           <q-space />
-          <q-btn
+
+          <q-btn-dropdown
             flat
             round
             dense
-            icon="search"
-            class="q-mr-xs text-blue-grey-7"
-          />
-          <q-btn flat round dense icon="group_add" class="text-blue-grey-7" />
+            icon="account_circle"
+            class="text-blue-grey-7"
+            size="1.5rem"
+          >
+           <q-list>
+        <q-item clickable v-close-popup>
+          <q-item-section>
+            <q-item-label>Photos</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable v-close-popup>
+          <q-item-section>
+            <q-item-label>Videos</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable v-close-popup>
+          <q-item-section>
+            <q-item-label>Articles</q-item-label>
+          </q-item-section>
+        </q-item>
+      </q-list>
+          </q-btn-dropdown>
         </q-toolbar>
       </div>
     </q-header>
@@ -46,14 +67,14 @@
               <div class="text-h4"><b>IMAGE LABELING</b></div>
               <div class="text-subtitle2">by LABERU</div>
               <div class="q-pa-md">
-                <div class="q-col-gutter-md q-mt-sm row items-start">
+                <div class="q-col-gutter-md q-mt-sm row items-start fadingImg">
                   <div class="col-3">
                     <q-img
                       class="imgFade_1"
                       transition="bounceInLeft"
                       src="../images/hight.jpg"
                       width="100%"
-                      height="355px"
+                      height="300px"
                     />
                   </div>
                   <div class="col-3">
@@ -62,7 +83,7 @@
                       transition="fade"
                       src="../images/right1.jpg"
                       width="100%"
-                      height="355px"
+                      height="300px"
                     />
                   </div>
                   <div class="col-3">
@@ -71,7 +92,7 @@
                       transition="fade"
                       src="../images/right2.jpg"
                       width="100%"
-                      height="355px"
+                      height="300px"
                     />
                   </div>
                   <div class="col-3">
@@ -80,7 +101,7 @@
                       transition="fade"
                       src="../images/right3.jpg"
                       width="100%"
-                      height="355px"
+                      height="300px"
                     />
                   </div>
                 </div>
@@ -133,7 +154,7 @@
                   </q-btn>
                 </div>
                 <q-separator inset />
-                <div class="q-mt-ml q-gutter-sm" align="center">
+                <div class="q-mt-lg q-gutter-sm" align="center">
                   <q-btn flat color="primary" label="Create an account" />
                 </div>
               </q-card-section>
@@ -182,23 +203,21 @@ export default {
 }
 
 .imgFade_1 {
-  animation-delay: 1s;
-  animation-duration: 2s;
+
+  transition-delay: 2s;
 }
 
 .imgFade_2 {
-  animation-delay: 1.5s;
-  animation-duration: 2s;
+  transition-delay: 3s;
 }
 
 .imgFade_3 {
-  animation-delay: 2s;
-  animation-duration: 2s;
+  transition-delay: 4s;
 }
 
 .imgFade_4 {
-  animation-delay: 2.5s;
-  animation-duration: 2s;
+  transition-delay: 5s;
+
 }
 
 .loginBtn {
