@@ -189,6 +189,11 @@ export default {
   border-radius: 5px;
 }
 
+.imgID {
+  margin: -10px 0 0 0;
+  font-size: 10px;
+}
+
 
 .q-pa-md {
   padding: 16px 16px;
@@ -437,4 +442,6 @@ export default {
   border-radius: 3px;
   transform: rotate(-90deg);
 }
+
 </style>
+

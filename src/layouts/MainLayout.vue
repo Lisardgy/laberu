@@ -10,8 +10,35 @@
             </q-toolbar-title>
           </q-btn>
           <q-space />
-          
-          <q-btn flat round dense icon="account_circle" class="text-blue-grey-7" />
+
+          <q-btn-dropdown
+            flat
+            round
+            dense
+            icon="account_circle"
+            class="text-blue-grey-7"
+            size="1.5rem"
+          >
+           <q-list>
+        <q-item clickable v-close-popup>
+          <q-item-section>
+            <q-item-label>Photos</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable v-close-popup>
+          <q-item-section>
+            <q-item-label>Videos</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable v-close-popup>
+          <q-item-section>
+            <q-item-label>Articles</q-item-label>
+          </q-item-section>
+        </q-item>
+      </q-list>
+          </q-btn-dropdown>
         </q-toolbar>
       </div>
     </q-header>
@@ -42,38 +69,41 @@
               <div class="q-pa-md">
                 <div class="q-col-gutter-md q-mt-sm row items-start fadingImg">
                   <div class="col-3">
-                    <q-img class="imgFade_1"
+                    <q-img
+                      class="imgFade_1"
                       transition="bounceInLeft"
                       src="../images/hight.jpg"
                       width="100%"
-                      height="355px"
+                      height="300px"
                     />
                   </div>
                   <div class="col-3">
-                    <q-img class="imgFade_2"
+                    <q-img
+                      class="imgFade_2"
                       transition="fade"
                       src="../images/right1.jpg"
                       width="100%"
-                      height="355px"
+                      height="300px"
                     />
                   </div>
                   <div class="col-3">
-                    <q-img class="imgFade_3"
+                    <q-img
+                      class="imgFade_3"
                       transition="fade"
                       src="../images/right2.jpg"
                       width="100%"
-                      height="355px"
+                      height="300px"
                     />
                   </div>
                   <div class="col-3">
-                    <q-img class="imgFade_4"
+                    <q-img
+                      class="imgFade_4"
                       transition="fade"
                       src="../images/right3.jpg"
                       width="100%"
-                      height="355px"
+                      height="300px"
                     />
                   </div>
-                 
                 </div>
                 <div class="q-col-gutter-md row items-start q-mt-xs"></div>
               </div>
@@ -124,7 +154,7 @@
                   </q-btn>
                 </div>
                 <q-separator inset />
-                <div class="q-mt-ml q-gutter-sm" align="center">
+                <div class="q-mt-lg q-gutter-sm" align="center">
                   <q-btn flat color="primary" label="Create an account" />
                 </div>
               </q-card-section>
@@ -165,27 +195,29 @@ export default {
   color: #666877;
 }
 
-.imgFade_1{
-  animation-delay: 0s;
-  
+/* .imgFade_1 {
+  animation-duration: 2500s;
+  animation-delay: 250s;
 }
 
-.imgFade_2{
-  animation-delay: 12s;
+.imgFade_2 {
+  animation-duration: 2500s;
+  animation-delay: 500s;
 }
 
-.imgFade_3{
-  animation-delay: 18s;
+.imgFade_3 {
+  animation-duration: 2500s;
+  animation-delay: 750s;
 }
 
-.imgFade_4{
-  animation-delay: 24s;
-}
+.imgFade_4 {
+  animation-duration: 2500s;
+  animation-delay: 1000s;
+} */
 
 .loginBtn {
   width: 300px;
   margin-top: 2rem;
-
 }
 
 .my-card {
@@ -213,18 +245,6 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
-
-.fadingImg{
-  position:static;
-
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.fadingImg li{
-  
 }
 
 .circles li {
