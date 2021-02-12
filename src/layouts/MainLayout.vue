@@ -5,20 +5,13 @@
         <q-toolbar class="row full-height justify-center">
           <q-btn flat>
             <q-icon name="img:../icons/logo.png" size="2rem" />
-
             <q-toolbar-title class="titleName"
               ><strong>LABERU.AI</strong>
             </q-toolbar-title>
           </q-btn>
           <q-space />
-          <q-btn
-            flat
-            round
-            dense
-            icon="search"
-            class="q-mr-xs text-blue-grey-7"
-          />
-          <q-btn flat round dense icon="group_add" class="text-blue-grey-7" />
+          
+          <q-btn flat round dense icon="account_circle" class="text-blue-grey-7" />
         </q-toolbar>
       </div>
     </q-header>
@@ -47,7 +40,7 @@
               <div class="text-h4">Image Labeling</div>
               <div class="text-subtitle2">by LABERU</div>
               <div class="q-pa-md">
-                <div class="q-col-gutter-md q-mt-sm row items-start">
+                <div class="q-col-gutter-md q-mt-sm row items-start fadingImg">
                   <div class="col-3">
                     <q-img class="imgFade_1"
                       transition="bounceInLeft"
@@ -101,7 +94,6 @@
                       <q-icon name="lock" />
                     </template>
                   </q-input>
-
                   <div align="right" class="q-pa-sm">
                     <q-btn
                       flat
@@ -131,7 +123,6 @@
                     <q-icon name="fab fa-google-plus-g" size="1.5rem" />
                   </q-btn>
                 </div>
-
                 <q-separator inset />
                 <div class="q-mt-ml q-gutter-sm" align="center">
                   <q-btn flat color="primary" label="Create an account" />
@@ -153,10 +144,8 @@ export default {
   data() {
     return {
       text: "",
-
       slide: 1,
       autoplay: true,
-
     };
   },
 };
@@ -177,28 +166,26 @@ export default {
 }
 
 .imgFade_1{
-  animation-delay: 1s;
-  animation-duration: 2s;
+  animation-delay: 0s;
+  
 }
 
 .imgFade_2{
-  animation-delay: 1.5s;
-  animation-duration: 2s;
+  animation-delay: 12s;
 }
 
 .imgFade_3{
-  animation-delay: 2s;
-  animation-duration: 2s;
+  animation-delay: 18s;
 }
 
 .imgFade_4{
-  animation-delay: 2.5s;
-  animation-duration: 2s;
+  animation-delay: 24s;
 }
 
 .loginBtn {
   width: 300px;
   margin-top: 2rem;
+
 }
 
 .my-card {
@@ -226,6 +213,18 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+.fadingImg{
+  position:static;
+
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fadingImg li{
+  
 }
 
 .circles li {
