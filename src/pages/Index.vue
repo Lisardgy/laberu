@@ -183,6 +183,7 @@ export default {
 .cardProfile {
   margin: 30px 0 0 0;
   width: 500px;
+  height: 200px;
   border-radius: 10px;
 }
 

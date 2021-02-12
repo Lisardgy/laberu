@@ -43,12 +43,13 @@
         <div class="row justify-around">
           <div class="col-lg-4">
             <q-card-section align="center">
-              <div class="text-h4">Image Labeling</div>
+              <div class="text-h4"><b>IMAGE LABELING</b></div>
               <div class="text-subtitle2">by LABERU</div>
               <div class="q-pa-md">
                 <div class="q-col-gutter-md q-mt-sm row items-start">
                   <div class="col-3">
-                    <q-img class="imgFade_1"
+                    <q-img
+                      class="imgFade_1"
                       transition="bounceInLeft"
                       src="../images/hight.jpg"
                       width="100%"
@@ -56,7 +57,8 @@
                     />
                   </div>
                   <div class="col-3">
-                    <q-img class="imgFade_2"
+                    <q-img
+                      class="imgFade_2"
                       transition="fade"
                       src="../images/right1.jpg"
                       width="100%"
@@ -64,7 +66,8 @@
                     />
                   </div>
                   <div class="col-3">
-                    <q-img class="imgFade_3"
+                    <q-img
+                      class="imgFade_3"
                       transition="fade"
                       src="../images/right2.jpg"
                       width="100%"
@@ -72,14 +75,14 @@
                     />
                   </div>
                   <div class="col-3">
-                    <q-img class="imgFade_4"
+                    <q-img
+                      class="imgFade_4"
                       transition="fade"
                       src="../images/right3.jpg"
                       width="100%"
                       height="355px"
                     />
                   </div>
-                 
                 </div>
                 <div class="q-col-gutter-md row items-start q-mt-xs"></div>
               </div>
@@ -88,7 +91,7 @@
           <div class="col-lg-5 q-mt-md">
             <q-card flat bordered class="jjCard">
               <q-card-section>
-                <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
+                <div class="text-h4 text-center"><b>SIGN IN</b></div>
                 <q-form class="">
                   <q-input square clearable type="email" label="Email">
                     <template v-slot:prepend>
@@ -109,16 +112,16 @@
                     />
                   </div>
                 </q-form>
-                <div align="center">
+
+                <div class="text-center">
                   <q-btn
-                    class="q-mt-xs"
-                    outline
-                    rounded
+                    class="btnSignin"
+                    label="SIGN IN"
+                    width="20%"
                     @click="$router.push('/index')"
-                    style="width: 300px"
-                    color="primary"
-                    label="Sign in"
                   />
+
+           
                 </div>
 
                 <div class="text-center q-pa-md q-gutter-md">
@@ -151,13 +154,20 @@ export default {
     return {
       text: "",
       slide: 1,
-      autoplay: true,
+      autoplay: true
     };
-  },
+  }
 };
 </script>
 
 <style>
+.btnSignin {
+  border-radius: 15px;
+  width: 70%;
+  background-color: rgb(0, 140, 255);
+  color: white;
+}
+
 .jjCard {
   height: 95%;
   width: 70%;
@@ -171,22 +181,22 @@ export default {
   color: #666877;
 }
 
-.imgFade_1{
+.imgFade_1 {
   animation-delay: 1s;
   animation-duration: 2s;
 }
 
-.imgFade_2{
+.imgFade_2 {
   animation-delay: 1.5s;
   animation-duration: 2s;
 }
 
-.imgFade_3{
+.imgFade_3 {
   animation-delay: 2s;
   animation-duration: 2s;
 }
 
-.imgFade_4{
+.imgFade_4 {
   animation-delay: 2.5s;
   animation-duration: 2s;
 }
@@ -194,7 +204,6 @@ export default {
 .loginBtn {
   width: 300px;
   margin-top: 2rem;
-
 }
 
 .my-card {
