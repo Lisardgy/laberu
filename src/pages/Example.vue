@@ -4,7 +4,7 @@
       <div class="text-white toolbarT">
         <q-toolbar class="row full-height justify-center">
           <q-btn flat>
-            <q-icon name="img:../icons/logo.png" size="2rem" />
+            <q-icon name="laberu" />
             <q-toolbar-title class="titleName"
               ><strong>LABERU.AI</strong>
             </q-toolbar-title>
@@ -41,103 +41,44 @@
     <q-page-container style="padding-top: 0">
       <div class="context">
         <div class="row justify-around">
-          <div class="col-lg-4">
-            <q-card-section align="center">
-              <div class="text-h4"><b>IMAGE LABELING</b></div>
-              <div class="text-subtitle2">by LABERU</div>
-              <div class="q-pa-md">
-                <div class="q-col-gutter-md q-mt-sm row items-start">
-                  <div class="col-3">
-                    <q-img
-                      class="imgFade_1"
-                      transition="bounceInLeft"
-                      src="../images/hight.jpg"
-                      width="100%"
-                      height="355px"
-                    />
-                  </div>
-                  <div class="col-3">
-                    <q-img
-                      class="imgFade_2"
-                      transition="fade"
-                      src="../images/right1.jpg"
-                      width="100%"
-                      height="355px"
-                    />
-                  </div>
-                  <div class="col-3">
-                    <q-img
-                      class="imgFade_3"
-                      transition="fade"
-                      src="../images/right2.jpg"
-                      width="100%"
-                      height="355px"
-                    />
-                  </div>
-                  <div class="col-3">
-                    <q-img
-                      class="imgFade_4"
-                      transition="fade"
-                      src="../images/right3.jpg"
-                      width="100%"
-                      height="355px"
-                    />
-                  </div>
-                </div>
-                <div class="q-col-gutter-md row items-start q-mt-xs"></div>
-              </div>
-            </q-card-section>
+          <div class="col-md-6">
+            <q-card class="exCard">
+              <q-card-actions vertical>
+                <q-img src="../images/exImg.png" class="exImg" />
+              </q-card-actions>
+            </q-card>
+
+            <q-card class="exCard" style="margin-top:20px">
+              <q-card-actions vertical>
+                <q-img src="../images/exDes.png" height="10%" />
+              </q-card-actions>
+            </q-card>
           </div>
-          <div class="col-lg-5 q-mt-md">
-            <q-card flat bordered class="jjCard">
-              <q-card-section>
-                <div class="text-h4 text-center"><b>SIGN IN</b></div>
-                <q-form class="">
-                  <q-input square clearable type="email" label="Email">
-                    <template v-slot:prepend>
-                      <q-icon name="email" />
-                    </template>
-                  </q-input>
-                  <q-input square clearable type="password" label="Password">
-                    <template v-slot:prepend>
-                      <q-icon name="lock" />
-                    </template>
-                  </q-input>
-                  <div align="right" class="q-pa-sm">
-                    <q-btn
-                      flat
-                      size="10px"
-                      class="text-grey-6"
-                      label="Forgot password?"
-                    />
-                  </div>
-                </q-form>
+          <div class="col-md-6">
+            <q-card class="rightCard">
+              <q-card-actions vertical>
+                <div class="exTitle">Tutorial</div>
 
-                <div class="text-center">
+                <div class="exDes">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris placerat libero sit amet ultrices lobortis. Sed sed
+                  aliquet nisl. Sed in pulvinar turpis, vel lacinia lectus.
+                  Pellentesque hendrerit, libero a ullamcorper tempor, nibh
+                  lacus finibus velit, eget tincidunt odio augue quis turpis. In
+                  nec justo turpis. Aliquam non ante sed lectus euismod
+                  malesuada. Vestibulum hendrerit lobortis neque. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Donec a orci
+                  vehicula, fringilla orci eget,
+                </div>
+
+                <div class="btnStart">
                   <q-btn
-                    class="btnSignin"
-                    label="SIGN IN"
-                    width="20%"
-                    @click="$router.push('/example')"
+                    class="btnStartColor"
+                    label="START"
+                    @click="$router.push('/index')"
                   />
-
-           
                 </div>
-
-                <div class="text-center q-pa-md q-gutter-md">
-                  <q-btn round color="indigo-7">
-                    <q-icon name="fab fa-facebook-f" size="1.5rem" />
-                  </q-btn>
-                  <q-btn round color="red-8">
-                    <q-icon name="fab fa-google-plus-g" size="1.5rem" />
-                  </q-btn>
-                </div>
-                <q-separator inset />
-                <div class="q-mt-ml q-gutter-sm" align="center">
-                  <q-btn flat color="primary" label="Create an account" />
-                </div>
-              </q-card-section>
-              <q-card-section> </q-card-section>
+              </q-card-actions>
             </q-card>
           </div>
         </div>
@@ -152,26 +93,68 @@ import EssentialLink from "components/EssentialLink.vue";
 export default {
   data() {
     return {
-      text: "",
-      slide: 1,
-      autoplay: true
+      text: ""
     };
   }
 };
 </script>
 
 <style>
-.btnSignin {
-  border-radius: 15px;
-  width: 70%;
-  background-color: rgb(0, 140, 255);
+.btnStartColor {
   color: white;
+  width: 60%;
+  background-color: #4e54c8;
 }
 
-.jjCard {
-  height: 95%;
-  width: 70%;
+.btnStart {
+  padding: 40px 10px 10px 10px;
+  text-align: center;
 }
+
+.exTitle {
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.exDes {
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.exCard {
+  left: 20%;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.rightCard {
+  right: 10%;
+  padding-bottom: 15px;
+  height: auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.exImg {
+  width: 100%;
+  height: 50%;
+}
+
+.q-pa-md {
+  padding: 16px 16px;
+  margin: -20px 0 0 0;
+}
+
+.q-textarea .q-field__native {
+  resize: none;
+  padding-top: 17px;
+  min-height: 52px;
+}
+
 .toolbarT {
   height: 80px;
   background: #f8f8f8;
@@ -179,36 +162,6 @@ export default {
 
 .titleName {
   color: #666877;
-}
-
-.imgFade_1 {
-  animation-delay: 1s;
-  animation-duration: 2s;
-}
-
-.imgFade_2 {
-  animation-delay: 1.5s;
-  animation-duration: 2s;
-}
-
-.imgFade_3 {
-  animation-delay: 2s;
-  animation-duration: 2s;
-}
-
-.imgFade_4 {
-  animation-delay: 2.5s;
-  animation-duration: 2s;
-}
-
-.loginBtn {
-  width: 300px;
-  margin-top: 2rem;
-}
-
-.my-card {
-  width: 400px;
-  border-radius: 10px;
 }
 
 .context {

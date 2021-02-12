@@ -103,7 +103,7 @@
                 </div>
               </q-card-actions>
             </q-card>
-            <q-card class="cardProfile" style="left: 15%">
+            <!-- <q-card class="cardProfile" style="left: 15%">
               <q-card-section>
                 <div class="text-h6 text-center"><b>Profile</b></div>
               </q-card-section>
@@ -123,7 +123,7 @@
                   </div>
                 </div>
               </q-card-actions>
-            </q-card>
+            </q-card> -->
           </div>
         </div>
       </div>
