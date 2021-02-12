@@ -28,6 +28,7 @@
                     color="amber"
                     label="HISTORY"
                     push
+                    @click="$router.push('/history')"
                     size="md"
                     v-close-popup
                   />
@@ -36,7 +37,6 @@
                   <q-btn
                     color="red"
                     label="Logout"
-                    @click="$router.push('/history')"
                     push
                     size="md"
                     v-close-popup
@@ -48,7 +48,7 @@
         </q-toolbar>
       </div>
     </q-header>
-    <q-parallax height="720">
+    <q-parallax height="750">
       <div class="area">
         <ul class="circles">
           <li></li>
@@ -74,7 +74,7 @@
                 <div class="row">
                   <div class="col">
                     <div class="imgNumber text-left" style="text-right">
-                      Image#99
+                      Image#01
                     </div>
                   </div>
                   <div class="col text-right">

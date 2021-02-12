@@ -116,7 +116,7 @@
             </q-card-section>
           </div>
           <div class="col-lg-5 q-mt-md">
-            <q-card flat bordered class="jjCard">
+            <q-card flat bordered class="jjCard" style="left:20%">
               <q-card-section>
                 <div class="text-h4 text-center"><b>SIGN IN</b></div>
                 <q-form class="">
