@@ -4,41 +4,47 @@
       <div class="text-white toolbarT">
         <q-toolbar class="row full-height justify-center">
           <q-btn flat>
-            <q-icon name="img:../icons/logo.png" size="2rem" />
+            <q-icon name="laberu" />
             <q-toolbar-title class="titleName"
               ><strong>LABERU.AI</strong>
             </q-toolbar-title>
           </q-btn>
           <q-space />
-
-          <q-btn-dropdown
+          <div class="user">
+            <div class="text-h6 text-center navUsername">labelru@gmail.com</div>
+          </div>
+          <q-btn
             flat
             round
             dense
             icon="account_circle"
             class="text-blue-grey-7"
-            size="1.5rem"
+            size="20px"
           >
-           <q-list>
-        <q-item clickable v-close-popup>
-          <q-item-section>
-            <q-item-label>Photos</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup>
-          <q-item-section>
-            <q-item-label>Videos</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup>
-          <q-item-section>
-            <q-item-label>Articles</q-item-label>
-          </q-item-section>
-        </q-item>
-      </q-list>
-          </q-btn-dropdown>
+            <q-menu touch-position>
+              <q-list style="min-width: 100px">
+                <q-item v-close-popup>
+                  <q-btn
+                    color="amber"
+                    label="HISTORY"
+                    @click="$router.push('/history')"
+                    push
+                    size="md"
+                    v-close-popup
+                  />
+                </q-item>
+                <q-item v-close-popup>
+                  <q-btn
+                    color="red"
+                    label="Logout"
+                    push
+                    size="md"
+                    v-close-popup
+                  />
+                </q-item>
+              </q-list>
+            </q-menu>
+          </q-btn>
         </q-toolbar>
       </div>
     </q-header>
@@ -141,8 +147,6 @@
                     width="20%"
                     @click="$router.push('/example')"
                   />
-
-           
                 </div>
 
                 <div class="text-center q-pa-md q-gutter-md">
@@ -182,6 +186,9 @@ export default {
 </script>
 
 <style>
+.navUsername {
+  color: black;
+}
 .btnSignin {
   border-radius: 15px;
   width: 70%;
@@ -203,7 +210,6 @@ export default {
 }
 
 .imgFade_1 {
-
   transition-delay: 2s;
 }
 
@@ -217,7 +223,6 @@ export default {
 
 .imgFade_4 {
   transition-delay: 5s;
-
 }
 
 .loginBtn {

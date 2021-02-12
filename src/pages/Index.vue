@@ -10,14 +10,41 @@
             </q-toolbar-title>
           </q-btn>
           <q-space />
+          <div class="user">
+            <div class="text-h6 text-center navUsername">labelru@gmail.com</div>
+          </div>
           <q-btn
             flat
             round
             dense
-            icon="search"
-            class="q-mr-xs text-blue-grey-7"
-          />
-          <q-btn flat round dense icon="group_add" class="text-blue-grey-7" />
+            icon="account_circle"
+            class="text-blue-grey-7"
+            size="20px"
+          >
+            <q-menu touch-position>
+              <q-list style="min-width: 100px">
+                <q-item v-close-popup>
+                  <q-btn
+                    color="amber"
+                    label="HISTORY"
+                    push
+                    size="md"
+                    v-close-popup
+                  />
+                </q-item>
+                <q-item v-close-popup>
+                  <q-btn
+                    color="red"
+                    label="Logout"
+                    @click="$router.push('/history')"
+                    push
+                    size="md"
+                    v-close-popup
+                  />
+                </q-item>
+              </q-list>
+            </q-menu>
+          </q-btn>
         </q-toolbar>
       </div>
     </q-header>
@@ -94,7 +121,8 @@
                     class="textDescribe"
                     v-model="text"
                     filled
-                    type="textarea" placeholder="โปรดใส่คำอธิบายรูปภาพ"
+                    type="textarea"
+                    placeholder="โปรดใส่คำอธิบายรูปภาพ"
                   />
                 </div>
 
@@ -144,6 +172,9 @@ export default {
 </script>
 
 <style>
+.navUsername {
+  color: black;
+}
 .imgNumber {
   padding: 5px 0 0 15px;
   font-weight: bold;
@@ -194,7 +225,6 @@ export default {
   margin: -10px 0 0 0;
   font-size: 10px;
 }
-
 
 .q-pa-md {
   padding: 16px 16px;
@@ -443,6 +473,4 @@ export default {
   border-radius: 3px;
   transform: rotate(-90deg);
 }
-
 </style>
-

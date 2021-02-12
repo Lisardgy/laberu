@@ -10,14 +10,41 @@
             </q-toolbar-title>
           </q-btn>
           <q-space />
+          <div class="user">
+            <div class="text-h6 text-center navUsername">labelru@gmail.com</div>
+          </div>
           <q-btn
             flat
             round
             dense
-            icon="search"
-            class="q-mr-xs text-blue-grey-7"
-          />
-          <q-btn flat round dense icon="group_add" class="text-blue-grey-7" />
+            icon="account_circle"
+            class="text-blue-grey-7"
+            size="20px"
+          >
+            <q-menu touch-position>
+              <q-list style="min-width: 100px">
+                <q-item v-close-popup>
+                  <q-btn
+                    color="amber"
+                    label="HISTORY"
+                    @click="$router.push('/history')"
+                    push
+                    size="md"
+                    v-close-popup
+                  />
+                </q-item>
+                <q-item v-close-popup>
+                  <q-btn
+                    color="red"
+                    label="Logout"
+                    push
+                    size="md"
+                    v-close-popup
+                  />
+                </q-item>
+              </q-list>
+            </q-menu>
+          </q-btn>
         </q-toolbar>
       </div>
     </q-header>
@@ -100,6 +127,9 @@ export default {
 </script>
 
 <style>
+.navUsername {
+  color: black;
+}
 .btnStartColor {
   color: white;
   width: 60%;

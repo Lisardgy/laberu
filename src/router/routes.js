@@ -13,6 +13,11 @@ const routes = [{
         component: () =>
             import ('pages/Example.vue')
     },
+    {
+        path: '/history',
+        component: () =>
+            import ('pages/History.vue')
+    },
     // Always leave this as last one,
     // but you can also remove it
     {
