@@ -64,7 +64,7 @@
         <div class="row justify-around">
           <div class="col-lg-4">
             <q-card-section align="center">
-              <div class="text-h4">Image Labeling</div>
+              <div class="text-h4"><b>IMAGE LABELING</b></div>
               <div class="text-subtitle2">by LABERU</div>
               <div class="q-pa-md">
                 <div class="q-col-gutter-md q-mt-sm row items-start fadingImg">
@@ -112,7 +112,7 @@
           <div class="col-lg-5 q-mt-md">
             <q-card flat bordered class="jjCard">
               <q-card-section>
-                <div class="text-h4 text-center">ลงชื่อเข้าใช้</div>
+                <div class="text-h4 text-center"><b>SIGN IN</b></div>
                 <q-form class="">
                   <q-input square clearable type="email" label="Email">
                     <template v-slot:prepend>
@@ -133,16 +133,16 @@
                     />
                   </div>
                 </q-form>
-                <div align="center">
+
+                <div class="text-center">
                   <q-btn
-                    class="q-mt-xs"
-                    outline
-                    rounded
-                    @click="$router.push('/index')"
-                    style="width: 300px"
-                    color="primary"
-                    label="Sign in"
+                    class="btnSignin"
+                    label="SIGN IN"
+                    width="20%"
+                    @click="$router.push('/example')"
                   />
+
+           
                 </div>
 
                 <div class="text-center q-pa-md q-gutter-md">
@@ -175,13 +175,20 @@ export default {
     return {
       text: "",
       slide: 1,
-      autoplay: true,
+      autoplay: true
     };
-  },
+  }
 };
 </script>
 
 <style>
+.btnSignin {
+  border-radius: 15px;
+  width: 70%;
+  background-color: rgb(0, 140, 255);
+  color: white;
+}
+
 .jjCard {
   height: 95%;
   width: 70%;
@@ -196,6 +203,7 @@ export default {
 }
 
 .imgFade_1 {
+
   transition-delay: 2s;
 }
 
@@ -209,6 +217,7 @@ export default {
 
 .imgFade_4 {
   transition-delay: 5s;
+
 }
 
 .loginBtn {
