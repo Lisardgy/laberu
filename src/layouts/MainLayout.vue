@@ -195,25 +195,21 @@ export default {
   color: #666877;
 }
 
-/* .imgFade_1 {
-  animation-duration: 2500s;
-  animation-delay: 250s;
+.imgFade_1 {
+  transition-delay: 2s;
 }
 
 .imgFade_2 {
-  animation-duration: 2500s;
-  animation-delay: 500s;
+  transition-delay: 3s;
 }
 
 .imgFade_3 {
-  animation-duration: 2500s;
-  animation-delay: 750s;
+  transition-delay: 4s;
 }
 
 .imgFade_4 {
-  animation-duration: 2500s;
-  animation-delay: 1000s;
-} */
+  transition-delay: 5s;
+}
 
 .loginBtn {
   width: 300px;
