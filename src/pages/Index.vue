@@ -17,7 +17,7 @@
             icon="search"
             class="q-mr-xs text-blue-grey-7"
           />
-          <q-btn flat round dense icon="group_add" class="text-blue-grey-7" />
+          <q-btn flat round dense icon="account_circle" size="1.5rem" style="" class="text-blue-grey-7"/>
         </q-toolbar>
       </div>
     </q-header>
